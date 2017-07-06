@@ -1,0 +1,1280 @@
+/* Styles used in framework and global styles */
+
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans:600,400,700,300' );
+
+html { height: 100%; margin: 0; padding: 0; }
+body 
+{ 
+margin: 0; 
+padding: 0; 
+font-family: 'Open Sans', sans-serif; 
+font-size: 13px; 
+height: 100%; 
+background-color:#ececec;
+}
+h1,h2,h3,h4 { font-weight: normal; } 
+/* Framework.html */
+input
+{
+  /*      font-size: 11px; */
+}
+#header
+{
+  background-color: #00a9e2;
+  padding-top: 60px;
+  width: 100%;
+  height: 84px;
+  background-image: url('logo.png');
+  background-repeat: no-repeat;
+  background-position: 385px 16px;
+  z-index: 1;
+}
+a.searchButton
+{
+  background: url('../../../../graphics/SevenCustomer/search.png') no-repeat;
+  height: 16px;
+  width: 16px;
+
+}
+#page
+{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  z-index: 0;
+}
+
+#page:after
+{
+	font-size: 12px;
+    content: "ABC Data AS, Sandakerveien 114B 0484 Oslo, Norge";
+
+}
+
+.hidden
+{
+  display: none;
+}
+
+#content
+{
+  width: 973px;
+  background-color: #ffffff;
+  text-align:left;
+  margin-left: auto;
+  height: 100%;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 0px; 
+  min-height: 700px;
+  box-shadow:2px 2px 10px #999999;
+  /*      padding-top: 7px; */
+
+
+  /*  overflow: auto; */
+}
+
+h1 { font-size: 17px;}
+
+#menu
+{
+  background-color: #cccccc;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 385px;
+  z-index: 1;
+}
+
+#menu ul
+{
+  margin: 0px;
+  margin-top: -16px;
+  margin-left: 40px;
+  padding: 0;
+  width: 420px;
+}
+
+#menu li
+{
+  list-style-type: none;
+  width: 105px;
+  height: 89px;
+  float: left; 
+  text-align: center;
+  color: #FFFFFF; 
+  z-index: 5;
+  margin-top: -3px;
+
+}
+
+#mainContent h1
+{
+  font-size: 15px;
+  margin:0;
+  padding:0;
+  font-weight: normal;
+
+}
+
+#menu li.active, #menu li.active a
+{
+  background: url('../../../../graphics/SevenCustomer/tab_02.png') no-repeat;
+  color: #000000;
+  text-decoration: none;
+  font-weight: normal;
+ 
+}   
+#menu li.active a
+{
+    
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;	
+    
+}
+#menu li a:hover
+{
+  text-decoration: underline;
+
+}
+
+#menu li a
+{
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-top: 11px;
+}
+
+.rightBar
+{
+  float:right;
+  width: 20%;
+  margin-top: 27px; 
+  background: url('../../../../graphics/SevenCustomer/skygge_right_column.png')  repeat-y left top;
+}
+.rightBar .searchDiv
+{
+  margin: 0 auto;
+  /*width: 140px;*/
+  border: 1px solid #cecece;
+  background-color: #fff;
+  padding: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  
+}
+
+.rightBar .searchDiv input, #ticketSearch input
+{
+  width: 120px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 16px;
+  font-size: 11px;
+  vertical-align: top;
+}
+
+input.obliq
+{
+  font-style: italic; 
+  /*text-align: right;*/
+}
+.box + .box
+{
+    margin-top: 3px;	
+}
+.box + .box h3
+{
+    margin-top: 8px;	
+}
+.box
+{
+  background: #f3f3f3; 
+  padding-left: 7px;
+  padding-right: 7px; 
+  padding-top: 6px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cfcfcf;
+  border-right: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+}
+
+
+.box>ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.box h3
+{
+  margin-top: 13px;
+  margin-bottom: 1px;
+  text-align: left;
+  padding-left: 18px;
+  font-size: 15px;
+}
+
+.box a:visited .box a
+{
+    color: #000;	
+}
+
+.box>ul>li
+{
+  background: url('../../../../graphics/SevenCustomer/blue_pill.png') no-repeat left top;
+  padding-left: 18px;
+}
+
+.box>ul>li>a:hover
+{
+    color: #7893a1;
+    
+}
+.box>ul>li>a
+{
+  text-decoration: none;
+  color: #000;
+}
+.box li a span.date
+{
+    color: #278ebd;
+}
+.clr
+{
+  clear: both;
+  height: 1px;
+  width: 1px;
+}
+
+#menu li a.menuRegisterTicket
+{
+  background: url('../../../../graphics/SevenCustomer/ny_sak.png') no-repeat top center;
+  display: block;
+  padding-top: 44px;
+}
+#menu li a.menuRegisterCust
+{
+  background: url('../../../../graphics/SevenCustomer/registrer_deg.png') no-repeat top center;
+  display: block;
+  padding-top: 44px;
+}
+#menu li a.menuTickets
+{
+  background: url('../../../../graphics/SevenCustomer/mine_saker.png') no-repeat top center;
+  display: block;
+  padding-top: 44px;
+}
+
+#menu li a.menuFAQ
+{
+  background: url('../../../../graphics/SevenCustomer/faq.png') no-repeat top center;
+  display: block;
+  padding-top: 44px;
+}
+
+#menu li a.menuHome
+{
+  background: url('../../../../graphics/SevenCustomer/hjem.png') no-repeat top center;
+  display: block;
+  padding-top: 44px;
+}
+
+#mainContent
+{
+  background: #FFFFFF;
+  float: left;  
+  width: 70%;
+  margin-top: 11px;
+  padding:30px;
+  line-height: 17px;
+}
+
+div#loginBox .customerName
+{
+  padding: 4px;
+  color: white;
+  margin-right: 5px;      
+}
+div#logoutBox a.logout:hover
+{
+  background: url('../../../../graphics/SevenCustomer/logout_mouseover.png') no-repeat center top;
+
+}
+div#personalBox a:hover, div#logoutBox a.logout:hover, #menu li a:hover
+{
+  color: #7893a1;
+  text-decoration: none;
+}
+
+div#logoutBox a.logout
+{
+  background: url('../../../../graphics/SevenCustomer/logout.png') no-repeat center top;     
+  margin-top: 8px;
+  padding-top: 20px;
+  display: block;
+  height: 30px;
+  text-align: center;
+  padding-right: 8px;
+  padding-left: 8px;
+
+}
+div#loginBox a
+{
+  text-decoration: normal;
+  padding-left: 5px;
+
+}
+
+
+input#doLogin
+{
+  border-top: 1px solid #F3bfa1;
+  border-bottom: 1px solid #F4CAB4;
+  border-left: 0;
+  border-right: 0;
+  background-color: #e37233;    
+  color: #FFF; 
+}
+
+#rememberMe
+{
+  border: 1px solid #000;
+  padding: 0;
+  padding: 0;  
+}
+
+#loginBox
+{
+  float: left;
+  margin-left: 60px;
+  width: 220px;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+#logoutBox
+{
+  width: 60px;
+  float: left; 
+  margin-top: 7px;  
+  border-left: 1px solid #889FAB;
+  border-right: 1px solid #889FAB;
+}
+
+#personalBox
+{
+  float: left;
+  width: 140px;      
+  margin-top: 6px;  
+  margin-left: 9px;
+}
+
+
+#loginBox #rememberMe
+{
+  margin: 0;
+  padding: 0;
+}
+
+.rememberMe
+{
+  padding-left: 6px;
+  vertical-align: middle;
+}
+
+
+#loginBox, #loginBox input
+{
+  font-size: 11px;
+}
+
+#loginBox input
+{
+  border-right: 0px;
+  border-left: 0;
+  border:1px solid #999999;
+  padding-bottom: 1px;
+  padding-left: 3px;
+  margin: 0;
+
+}
+
+#loginBox span, #loginBox a
+{
+  color: #FFF;
+  text-decoration: none;
+}
+
+#loginBox td
+{
+  text-align: left;
+}
+
+/* Styles used in listTickets */
+#ticketSummary
+{
+  position: absolute;
+  z-index: -1;
+  width: 300px;
+}
+
+#ticketSearch, #ticketSummary
+{
+  margin: 0;
+  padding: 1px;
+  width: 245px;
+  line-height: 17px;
+  height: 17px;     
+
+  border-right: 1px solid #cecece;
+}
+
+#ticketSummary span
+{
+  padding-right: 15px;
+}
+
+#listTickets h2
+{
+  margin-top: 29px;
+  font-weight: normal;
+  padding-left: 5px;
+  margin-bottom: 7px;
+}
+#listTickets
+{
+
+}
+
+#listTickets .listTicketsTable ~ h2
+{
+  margin-top: 54px;
+  margin-bottom: 7px;
+}
+
+#ticketSummary
+{
+  padding-left: 5px;
+}
+
+#ticketSearch img, .searchDiv img, #faqEntry .faqSearch img
+{
+  float: right;
+}
+#ticketSearch
+{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 1px;
+  height: 17px;
+  width: 170px;
+  float: right;
+  background-color: #FFF;
+  border-left: 1px solid #FFF;
+}
+#ticketSummary
+{
+  background-color: #F1F1F1;
+  border-top: 1px solid #a0a0a0;
+  border-bottom: 1px solid #a0a0a0;
+}
+#ticketSummary .active
+{
+  color: green;
+}
+
+#listTickets h2, #faqEntry h2
+{
+  color: grey;
+  font-size: 11px;
+}
+
+table.listTickets, table.faqTable
+{
+  border-collapse: collapse;
+}
+table.listTickets th, table.listTickets td, table.faqTable th, table.faqTable td
+{
+  text-align: left;
+}
+table.listTickets th a, table.faqTable th
+{
+  color: grey;     
+  text-decoration: none;
+}
+table.listTicketsTable tr.ticketTitle td
+{
+  font-size: 15px;
+  padding-top: 5px;
+} 
+
+table.listTickets td a
+{
+  color: #000;
+  text-decoration: none;
+}
+table.listTicketsTable tr
+{
+    vertical-align: top;	
+}
+table.listTicketsTable tr.details { } 
+
+table.listTicketsTable tr.details td
+{
+  margin-top: 11px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #dedede;
+  text-align: left;
+  border-top: 1px solid #dedede;
+}
+table.listTicketsTable
+{
+  border-collapse: collapse;
+  width: 100%;
+}
+table.listTicketsTable tr:hover
+{
+    background-color: #f1f1f1;	
+}
+
+table.listTicketsTable a
+{ 
+  text-decoration: none;
+  color: black;
+}
+table.listTicketsTable tr.details td.status
+{
+  text-align: right; 
+  border-bottom: 0;
+  border-top: 0;
+
+}  
+table.listTicketsTable a.ticket_Closed
+{
+  background: url('../../../../graphics/SevenCustomer/passiv_knapp.png') repeat-x left top;
+  padding: 0px 0px;
+  height: 20px;
+  color: white;
+  /*width: 50px;  */
+  
+  text-align: center;
+  display: block;
+}
+
+table.listTicketsTable a.ticket_Open
+{
+  background: url('../../../../graphics/SevenCustomer/aktiv_knapp.png') repeat-x left top;
+  padding: 0px 0px;
+  text-align: center;
+  height: 20px;
+  color: white;
+  /*width: 50px; */
+  /* width: 100%;*/
+  display: block;
+}
+
+table.listTicketsTable tr.head
+{
+
+  border-bottom: 1px solid #cecece;
+  font-weight: normal;
+}
+table.listTicketsTable tr.messageSum td img
+{
+  vertical-align: bottom;
+}
+table.listTicketsTable tr.messageBody td, table.listTicketsTable tr.messageSum td
+{
+  padding-top: 0;
+
+}
+table.listTicketsTable tr.ticketTitle td, table.listTicketsTable tr.messageBody td
+{
+  padding-left: 5px;
+}
+
+table.listTicketsTable tr td
+{
+  padding-left: 5px;
+}
+
+table.listTicketsTable tr.messageBody > td > div
+{
+  max-height: 100px;
+  overflow: hidden;
+}
+
+table.listTicketsTable tr.head th
+{   
+  padding-left: 5px;
+  padding-right: 5px;
+  color: grey;
+  text-align: left;
+}
+table.listTicketsTable tr.head th a
+{ 
+  color: grey;
+  text-decoration: none;
+  font-weight: normal;
+} 
+
+table.listTicketsTable tr.head th.status
+, table.listTicketsTable tr.details td.status
+{
+  /* width: 50px; */
+  text-align: center;
+}
+
+.pagination
+{
+  margin-top: 18px;
+}
+
+.pagination a, .pagination a.active
+{
+  border-left: 1px solid #424b4f;
+  border-right: 1px solid #424b4f;
+  background: url('../../../../graphics/SevenCustomer/pager_stretcher.png') repeat-x left center;
+  padding: 0px 3px;
+  color: #fff;
+  line-height: 17px;
+  text-decoration: none;
+  float: left;
+  height: 17px;
+  margin-right: 5px;
+  vertical-align: middle;
+  padding-bottom: 1px;
+}
+
+.pagination a.noBack
+{
+  background: none;
+  border: 0;
+  width: 19px;
+}
+
+.pagination a.active
+{
+  background: url('../../../../graphics/SevenCustomer/pager_stretcher_active.png') repeat-x left center;
+  border-left: 1px solid #b3b7b9;
+  border-right: 1px solid #b3b7b9;
+  color: #000;   
+}
+
+/* Styles in viewKb. */
+#faqEntry
+{
+    padding-bottom: 10px;
+}
+#faqEntry .listLinks
+{
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+  width: 100%;
+  padding: 0;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+#faqEntry .faqComment h2
+{
+  margin: 0;
+  margin-top: 3px;
+}
+
+#faqEntry .listLinks a img
+{
+  border: 0;
+}
+#faqEntry p
+{   
+  margin: 0;
+  padding: 0;
+}
+#faqEntry .listLinks a
+{
+  text-decoration: none;
+  color: #000;
+}
+div#addCommentContainer
+{
+  padding: 14px;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #fffdf4;
+}
+
+#faqEntry .lastUpdated
+{
+  margin-top: 4px;
+  color: grey;
+  font-style: oblique;
+}
+#faqEntry .comments
+{
+  background-color: #FFFDF4;    	
+}
+
+#faqBox
+{
+  overflow: auto;
+  height: 22px;
+}
+
+.faqSearch, .faqPaths
+{
+  margin: 0;
+  line-height: 17px;
+  height: 17px;     
+  padding: 1px;
+  border-right: 1px solid #cecece;
+}
+.faqSearch img
+{
+  float: right;
+}
+.faqSearch input
+{
+  width: 100px;
+  height: 17px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.faqPaths
+{
+  overflow: hidden;
+  background-color: #F1F1F1;
+  border-top: 1px solid #a0a0a0;
+  border-bottom: 1px solid #a0a0a0;
+  padding: 1px;
+  width: 270px;
+  position: absolute;
+  z-index: 0;
+}
+
+.faqPaths table
+{
+   border-collapse: collapse;
+}
+
+.faqPaths table tr, .faqPaths table td
+{
+  margin: 0;
+  padding: 0;
+}
+table.faqTable
+{
+  margin-top:  24px;
+} 
+table.faqTable td
+{
+  padding-top: 2px;
+} 
+table.faqTable img
+{
+  vertical-align: bottom;
+  padding-right: 4px;
+  padding-bottom: 1px;
+}
+table.faqTable img.rating
+{
+  padding: 0;
+}
+.faqSearch
+{
+  background-color: #FFF;
+  width: 150px;
+  position: absolute;
+  right: 28px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #FFF;
+
+} 
+
+.faqPaths table td a.path
+{
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+  color: grey;
+  display: block;
+}
+.faqWords
+{
+  /* height: 17px; */
+  padding: 1px;
+  background-color: #F1F1F1;
+  border-bottom: 1px solid #A0A0A0;
+  padding-left: 6px;
+}
+.faqWords a
+{
+    color: black;
+    text-decoration: none;   	
+}
+.faqWords a:hover
+{
+    color: #7893a1;	
+}
+#faqEntry h1
+{
+  margin-top: 35px;
+  margin-bottom: 5px;
+}
+.faqTable
+{
+  width: 100%;
+}
+.faqTable a
+{
+  text-decoration: none;
+  color: #000;
+} 
+/* Styles used for the listTicket */
+
+#fileList li
+{
+  list-style-type: none;
+  clear: both;
+}
+
+#fileList span
+{
+  float: left;
+}
+
+#fileList
+{
+  position: relative;
+  margin-bottom: 17px;
+}
+
+#fileList li input
+{   
+  font-size: 11px;
+  height: 20px;
+}
+
+a.remove
+{
+  float: right;
+  margin-right: 20px;
+}
+a.remove:hover
+{
+  cursor: pointer;
+}
+div#addCommentContainer textarea.editMessage
+{
+    width: 300px;
+}
+
+textarea.editMessage
+{
+  border: 1px solid #9e9e9e;
+  width: 350px;
+  height: 80px;
+  padding: 0;
+}
+div#messageContainer label#fileUploadButton
+{
+  margin-top: 10px;
+  margin-left: 39px;
+  margin-bottom: 10px;
+  display: block;
+} 
+div.ticketMessage
+{
+  display: none;
+  /* margin-bottom: 11px;*/
+  padding: 2px;
+  clear: both;
+  margin-top: -1px;
+}
+
+div#showAllMessages, div#showComment, div#hideComment
+{
+  background: #dfdfdf url('../graphics/SevenCustomer/knapp.png') repeat-x left center;
+  padding: 0;
+  padding-right: 10px;
+  height: 23px;
+  line-height: 23px;
+  float: left; 
+}
+
+div#ticketForm label#fileUploadButton, div#listTicket label#fileUploadButton
+{
+  background: #dfdfdf url('../graphics/SevenCustomer/knapp.png') repeat-x left center;
+  padding: 0;
+  padding-right: 10px;
+  height: 23px;
+  line-height: 23px;
+  display: block;	
+  padding-right: 5px;
+  width: 120px;
+}
+div#showAllMessages img, div#showComment img, label#fileUploadButton img, div#listTicket label#fileUploadButton img, div#hideComment img
+{
+  float: left;
+  margin-top: 4px;
+}
+div.ticketMessage h2
+{
+  color: grey;
+  font-size: 11px;
+  padding: 0;
+  margin: 0;
+  
+}
+div.ticketMessage h2 span.data
+{
+  color: black;
+  border-bottom: 1px solid #BBBBBB;
+}
+
+#ticketLessDetails, #ticketMoreDetails
+{
+  text-decoration: underline;
+  color: #9e9e9e;
+
+}
+#messages
+{
+  margin-top: 24px;
+}
+#addMessageContainer
+{
+  display: none;
+  clear: both;
+  margin-top: 14px;
+
+}
+div#messageContainer
+{
+  padding-left: 14px;     
+  background-color: #fffdf4;
+  padding-top: 14px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+}
+
+.addMessage 
+{
+  text-decoration: none;
+  line-height: 23px;
+  margin-top: -1px;
+}
+.addMessage img
+{
+  border: 0;
+  margin-top: 4px;
+  float: left;
+  margin-left: 5px; 
+}
+.addMessage:hover, div#showAllMessages:hover, div#showComment:hover, #messageSend:hover, div#commentSend:hover, div#ticketForm .submitButton:hover, #registerCust .submitButton:hover,  #changeCust .submitButton:hover, #sendPassword .submitButton:hover, #login .submitButton:hover, div#ticketForm label#fileUploadButton:hover, div#listTicket label#fileUploadButton:hover, div#hideComment:hover
+{
+  background: url('../graphics/SevenCustomer/knapp_hover.png') repeat-x left center;
+  color: #666666;
+  cursor: pointer;
+}
+ul.attList
+{
+  list-style-type: none;
+  margin: 0;
+  margin-top: 17px;
+  padding: 0;
+  /*      width: 300px; */
+  /*      overflow: auto; */
+}
+
+ul.attList li a
+{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+ul.attList li
+{
+  clear: left;
+  margin-right: 10px;
+  background: url('../graphics/SevenCustomer/vedlegg.png') no-repeat left center; 
+  padding-left: 20px;
+
+}
+
+#messageSend img, #commentSend img
+{
+  border: 0;
+  margin-top: 4px;
+  float: left;
+  margin-left: 5px; 
+}
+#messageSend input, #commentSend input, #ticketForm .submitButton input, #registerCust .submitButton input, #changeCust .submitButton input, #sendPassword .submitButton input, #login .submitButton input
+{
+  border: 0;
+  margin: 0;
+  padding:0;
+  vertical-align: bottom;
+  height: 23px;
+  background: transparent;
+}
+input
+{
+  font-family:Verdana, sans-serif;
+}
+
+#messageSend, #commentSend, #ticketForm .submitButton, #registerCust .submitButton, #changeCust .submitButton, #sendPassword .submitButton, #login .submitButton
+{
+  background: url('../graphics/SevenCustomer/knapp.png') repeat-x left center;
+  height: 23px;
+  line-height: 23px;
+  float: left;
+  padding: 0 10px 0 0;
+}
+#sendPassword form>div
+{
+    width: 300px;
+    margin-left: 62px;	
+}
+
+#sendPassword .submitButton
+{
+    padding-left: 10px;
+    padding-right: 10px;	
+}
+
+#ticketForm .submitButton input, #registerCust .submitButton input, #changeCust .submitButton input, #sendPassword .submitButton input, #login .submitButton input
+{
+  display: inline;
+  width: auto;
+
+} 
+
+.addMessage
+{
+  background: url('../graphics/SevenCustomer/knapp.png') repeat-x left center;
+  height: 23px;
+  line-height: 23px;
+  float: left;
+  padding: 0 10px 0 0;
+}
+
+
+#fader
+{
+  background: #0a0a0a;     
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  opacity:0.4;
+  filter:alpha(opacity=40);
+}
+
+
+.errorMessage
+{
+  background-color: #dc6059;
+  color: white;
+  padding-left: 92px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right: 1px;
+}
+.errorMessage img
+{
+  float: left;
+}
+label.error
+{
+  background: url('../graphics/SevenCustomer/error.png') no-repeat left center;
+  padding-left: 20px;
+}
+
+.listTickets th, table.faqTable th
+{
+  border-bottom: 1px solid #dedede;
+  font-weight: normal;
+}
+#listTickets table.ticket
+{
+    padding-bottom: 4px;	
+}
+#listTickets table.ticket:hover td
+{
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.error
+{
+  color: red;
+}
+
+div#ticketForm, div#registerCust, div#changeCust, div#sendPassword, div#login
+{
+  margin: 0 auto;
+  height: 100%;
+}
+
+div#ticketForm label, div#registerCust label, div#changeCust label, div#sendPassword label, div#login label
+{
+  display: block;
+  padding: 0;
+  width: 300px;
+  margin: 0 auto;
+  margin-left: 62px;
+  margin-bottom: 2px;
+}
+div#ticketForm span.errorText, div#registerCust span.errorText, div#changeCust span.errorText, div#sendPassword span.errorText
+{
+  margin-left: 60px;
+  font-size: 11px;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: block;
+  color: #FFF;
+  width: 298px;
+  background-color: #DC6059;
+  margin-bottom: 1px;
+}
+
+div#ticketForm .submitButtons, div#registerCust .submitButtons, div#changeCust .submitButtons, div#sendPassword .submitButtons, div#login .submitButtons
+{
+  background: url('../graphics/SevenCustomer/pix.png') repeat-x left top;
+  border-collapse: collapse;
+}
+div#ticketForm span.error, div#registerCust span.error, div#changeCust span.error, div#sendPassword span.error
+{
+  background: url('../graphics/SevenCustomer/mandatory.png') no-repeat left center;
+  width: 16px;
+  margin-bottom: -17px;       
+  display: block;
+  margin-left: 46px;
+}
+div#ticketForm .submitButtons img, div#registerCust .submitButtons img, div#changeCust .submitButtons img, div#sendPassword .submitButtons img, div#login .submitButtons img
+{
+  padding-left: 4px;
+  padding-top: 4px;
+  float: left;
+}
+div#ticketForm .submitButtons td, div#registerCust .submitButtons td, div#changeCust .submitButtons td, div#sendPassword .submitButtons td, div#login .submitButtons td
+{
+  vertical-align: top;
+  padding-top: 0;
+}
+
+div#ticketForm h1, div#registerCust h1, div#changeCust h1, div#sendPassword h1, div#welcome .pageHeader, div#loggedIn .pageHeader
+{
+  font-size: 15px;
+  margin-bottom: 17px;
+ } 
+
+ div#ticketForm input.submitButton, div#registerCust input.submitButton, div#changeCust input.submitButton, div#login input.submitButton
+ {
+   width: auto;
+ }
+
+ /* Styles in registerCust */
+
+div#ticketForm h1, div#registerCust h1, div#changeCust h1, div#sendPassword h1
+{
+  padding-left: 62px;
+}
+
+
+div#ticketForm input,   div#ticketForm textarea, div#ticketForm select, div#registerCust input, div#registerCust textarea, div#registerCust select, div#changeCust input, div#changeCust textarea, div#changeCust select, div#login input,
+div#sendPassword input, div#sendPassword textarea, div#sendPassword select
+{
+  width: 300px;
+  margin: 0 auto;
+  margin-left: 60px;
+  display: block;
+}
+
+div#ticketForm label#fileUploadButton
+{
+  margin-top: 17px;
+  
+}
+div#ticketForm ul#fileList
+{
+  padding: 0;
+} 
+div#ticketForm div#fileUpload input
+{
+  margin: 0;
+}
+div#ticketForm div#fileUpload
+{
+  width: 306px;
+  margin: 0 auto;
+  margin-top: 17px;      
+}
+.spacer1
+{
+  height: 40px;
+}
+
+#raterPopup
+{
+
+  display: none;
+  position: absolute;
+  width: 140px; 
+  height: 31px;
+  z-index: 100;
+  background: transparent url('../../../../graphics/SevenCustomer/rate_arrow.png') no-repeat center bottom;
+  margin: 0;
+  padding: 0;
+ 
+} 
+#raterPopup div
+{
+  padding: 2px;
+  padding-left: 4px;
+  padding-top: 3px;
+  margin: 0;
+  width: 95px;
+}
+
+
+#raterPopup a
+{
+  color: #FFF;
+  text-decoration: none;
+  margin-left: 3px;
+  padding: 3px 2px 2px 2px;
+  text-align: center; 
+  display: block;
+  float: right;
+  width: 34px;
+}
+
+#raterPopup a:hover
+{
+  color: #ffc50f;
+  background-color: #555555;
+
+}
+
+#raterPopup img
+{
+  vertical-align: bottom;
+  line-height: 20px;
+
+}
